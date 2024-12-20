@@ -12,6 +12,7 @@ export default function About() {
               src="headshot.jpg"
               alt="Ty Walters"
               fill={true}
+              layout="responsive"
             />
           </div>
           <div className="max-w-2xl text-center md:text-left">
