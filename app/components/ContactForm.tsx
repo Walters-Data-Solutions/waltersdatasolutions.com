@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, FormEvent, useEffect } from 'react'
-import { useTheme } from 'next-themes'
 
 export default function ContactForm() {
   const [name, setName] = useState('')
