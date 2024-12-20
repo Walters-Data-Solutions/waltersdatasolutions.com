@@ -17,14 +17,7 @@ export default function About() {
           <div className="max-w-2xl text-center md:text-left">
             <h3 className="text-2xl font-semibold mb-4 text-blue-600 dark:text-blue-400 font-display">Ty Walters</h3>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              Ty Walters is a seasoned sports data professional with comprehensive experience spanning the
-              entire data lifecycle—from ingestion to storage, transformation, and visualization.
-               He is passionate about automation and leveraging innovative technology to help organizations
-               redefine what’s possible, make their workflows more efficient,
-               and enable them to focus on what truly matters.
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              Currently serving as a Senior Data Scientist at University of Pittsburgh Athletics.
+              Ty Walters is serving as a Senior Data Scientist at University of Pittsburgh Athletics.
                His background includes significant contributions to both the business and
                performance sides of the sports and entertainment industry.
                 On the business side, Ty has driven initiatives focused on ticket sales and customer insights,
@@ -33,7 +26,9 @@ export default function About() {
             </p>
                         <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
               With technical expertise, a deep understanding of cloud technologies and the unique challenges of sports and entertainment,
-              Ty empowers organizations to enhance their data capabilities and achieve scalable, impactful results.
+              Ty empowers organizations to enhance their data capabilities and
+              leverage innovative technology to help organizations
+               redefine what’s possible, make their workflows more efficient, and enable them to focus on what truly matters.
             </p>
             <a 
               href="https://www.linkedin.com/in/ty-walters"
