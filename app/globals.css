@@ -37,9 +37,3 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-iframe {
-    border-radius: 5px;
-    width: 302px;
-    height: 76px;
- }
-
