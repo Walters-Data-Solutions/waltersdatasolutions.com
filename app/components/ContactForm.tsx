@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, FormEvent, useRef, useEffect } from 'react'
+import { useState, FormEvent, useEffect } from 'react'
 
 export default function ContactForm() {
   const [name, setName] = useState('')
