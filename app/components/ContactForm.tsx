@@ -104,7 +104,7 @@ export default function ContactForm() {
           </form>
           {status === 'success' && (
             <div className="mt-4 p-4 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-100 rounded-md">
-              Thank you for your message. We'll get back to you soon!
+              Thank you for your message. We&apos;ll get back to you soon!
             </div>
           )}
           {status === 'error' && (
