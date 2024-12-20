@@ -11,7 +11,7 @@ export default function About() {
             <Image
               src="/headshot.jpg"
               alt="Ty Walters"
-              fill="true"
+              fill={"true"}
             />
           </div>
           <div className="max-w-2xl text-center md:text-left">
