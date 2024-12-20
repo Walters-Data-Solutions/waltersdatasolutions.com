@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, FormEvent, useRef } from 'react'
+import { useState, FormEvent, useRef, useEffect } from 'react'
 import ReCAPTCHA from "react-google-recaptcha"
+import { useTheme } from 'next-themes'
 
 export default function ContactForm() {
   const [name, setName] = useState('')
@@ -9,6 +10,14 @@ export default function ContactForm() {
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const recaptchaRef = useRef<ReCAPTCHA>(null)
+  const { theme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  const [key, setKey] = useState(0)
+
+  useEffect(() => {
+    setMounted(true)
+    setKey(prevKey => prevKey + 1) // Force re-render of reCAPTCHA when theme changes
+  }, [theme])
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -45,10 +54,14 @@ export default function ContactForm() {
     }
   }
 
+  if (!mounted) {
+    return null
+  }
+
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white font-display">Contact</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white font-display">Contact Us</h2>
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -89,9 +102,10 @@ export default function ContactForm() {
             </div>
             <div className="flex justify-center">
               <ReCAPTCHA
+                key={key}
                 ref={recaptchaRef}
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
-                theme={typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'}
+                theme={theme === 'dark' ? 'dark' : 'light'}
               />
             </div>
             <button
@@ -104,7 +118,7 @@ export default function ContactForm() {
           </form>
           {status === 'success' && (
             <div className="mt-4 p-4 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-100 rounded-md">
-              Thank you for your message. We&apos;ll get back to you soon!
+              Thank you for your message. We'll get back to you soon!
             </div>
           )}
           {status === 'error' && (
@@ -117,4 +131,3 @@ export default function ContactForm() {
     </section>
   )
 }
-
