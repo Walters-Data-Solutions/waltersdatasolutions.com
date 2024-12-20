@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-    assetPrefix: './',
 devIndicators: {
     appIsrStatus: false,
   },};

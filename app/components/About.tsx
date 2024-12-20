@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="w-64 h-64 relative rounded-full overflow-hidden shadow-lg">
             <Image
-              src="/headshot.jpg"
+              src="headshot.jpg"
               alt="Ty Walters"
               fill={true}
             />
