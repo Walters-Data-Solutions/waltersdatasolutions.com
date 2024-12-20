@@ -1,32 +1,62 @@
 'use client'
 
-import { useState, FormEvent, useEffect } from 'react'
+import { useState, FormEvent, useRef, useEffect } from 'react'
+import ReCAPTCHA from "react-google-recaptcha"
 import { useTheme } from 'next-themes'
 
 export default function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [status, setStatus] = useState<'idle' | 'success'>('idle')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const recaptchaRef = useRef<ReCAPTCHA>(null)
   const { theme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const [key, setKey] = useState(0)
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+    setKey(prevKey => prevKey + 1) // Force re-render of reCAPTCHA when theme changes
+  }, [theme])
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const subject = encodeURIComponent('New Contact Form Submission')
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)
-    window.location.href = `mailto:ty@waltersdatasolutions.com?subject=${subject}&body=${body}`
-    setStatus('success')
-    setName('')
-    setEmail('')
-    setMessage('')
+    setStatus('loading')
+
+    const captchaValue = recaptchaRef.current?.getValue()
+    if (!captchaValue) {
+      setStatus('error')
+      alert('Please complete the reCAPTCHA')
+      return
+    }
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message, captcha: captchaValue }),
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        setName('')
+        setEmail('')
+        setMessage('')
+        recaptchaRef.current?.reset()
+      } else {
+        setStatus('error')
+      }
+    } catch (error) {
+      console.error('Error sending email:', error)
+      setStatus('error')
+    }
   }
 
-  if (!mounted) return null
+  if (!mounted) {
+    return null
+  }
 
   return (
     <section id="contact" className="py-20">
@@ -70,16 +100,30 @@ export default function ContactForm() {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
+            <div className="flex justify-center">
+              <ReCAPTCHA
+                key={key}
+                ref={recaptchaRef}
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
+                theme={theme === 'dark' ? 'dark' : 'light'}
+              />
+            </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300"
+              className="w-full bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300 disabled:opacity-50"
+              disabled={status === 'loading'}
             >
-              Send Message
+              {status === 'loading' ? 'Sending...' : 'Send Message'}
             </button>
           </form>
           {status === 'success' && (
             <div className="mt-4 p-4 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-100 rounded-md">
-              Thank you for your message. We'll get back to you soon!
+              Thank you for your message. We&apos;ll get back to you soon!
+            </div>
+          )}
+          {status === 'error' && (
+            <div className="mt-4 p-4 bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-100 rounded-md">
+              There was an error sending your message. Please try again later.
             </div>
           )}
         </div>
