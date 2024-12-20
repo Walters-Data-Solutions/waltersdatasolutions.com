@@ -22,7 +22,7 @@ export default function About() {
                performance sides of the sports and entertainment industry.
                 On the business side, Ty has driven initiatives focused on ticket sales and customer insights,
                  while on the performance side, he has worked closely with player performance
-                 data to optimize player acquisition.
+                data to optimize player acquisition.
             </p>
                         <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
               With technical expertise, a deep understanding of cloud technologies and the unique challenges of sports and entertainment,
