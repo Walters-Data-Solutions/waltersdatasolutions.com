@@ -7,8 +7,8 @@ export default function About() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white font-display">About Me</h2>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-          <div className="w-full max-w-xs">
-            <div className="w-64 h-64 relative rounded-full overflow-hidden shadow-lg">
+            <div className="w-full max-w-xs flex justify-center lg:justify-start">
+              <div className="w-full max-w-[256px] aspect-square relative rounded-full overflow-hidden shadow-lg">
               <Image
                 src="headshot.jpg"
                 alt="Ty Walters"
