@@ -1,13 +1,77 @@
 import './globals.css'
 import { Inter, Poppins } from 'next/font/google'
 import { ThemeProvider } from './components/ThemeProvider'
+import { Metadata, Viewport } from 'next'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const poppins = Poppins({ weight: ['400', '600', '700'], subsets: ['latin'], variable: '--font-poppins' })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Walters Data Solutions',
-  description: 'Expert data engineering and data science consulting',
+  description: 'Expert data engineering and data science consulting to drive your business forward',
+  keywords: ['data engineering', 'data science', 'consulting', 'analytics', 'machine learning'],
+  authors: [{ name: 'Ty Walters' }],
+  creator: 'Ty Walters',
+  publisher: 'Walters Data Solutions',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://waltersdatasolutions.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Walters Data Solutions',
+    description: 'Expert data engineering and data science consulting to drive your business forward',
+    url: 'https://waltersdatasolutions.com',
+    siteName: 'Walters Data Solutions',
+    images: [
+      {
+        url: 'https://waltersdatasolutions.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Walters Data Solutions',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Walters Data Solutions',
+    description: 'Expert data engineering and data science consulting to drive your business forward',
+    creator: '@tywalters',
+    images: ['https://waltersdatasolutions.com/twitter-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
 }
 
 export default function RootLayout({
@@ -25,4 +89,3 @@ export default function RootLayout({
     </html>
   )
 }
-
