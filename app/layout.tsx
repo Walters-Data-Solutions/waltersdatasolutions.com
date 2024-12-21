@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: 'Walters Data Solutions',
     images: [
       {
-        url: 'https://waltersdatasolutions.com/og-image.jpg',
+        url: 'https://waltersdatasolutions.com/favicon-32x32.png',
         width: 1200,
         height: 630,
         alt: 'Walters Data Solutions',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: 'Walters Data Solutions',
     description: 'Expert data engineering and data science consulting to drive your business forward',
     creator: '@tywalters',
-    images: ['https://waltersdatasolutions.com/twitter-image.jpg'],
+    images: ['https://waltersdatasolutions.com/favicon-32x32.png'],
   },
   robots: {
     index: true,
