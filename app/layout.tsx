@@ -9,7 +9,7 @@ const poppins = Poppins({ weight: ['400', '600', '700'], subsets: ['latin'], var
 export const metadata: Metadata = {
   title: 'Walters Data Solutions',
   description: 'Expert data engineering and data science consulting to drive your business forward',
-  keywords: ['data engineering', 'data science', 'consulting', 'analytics', 'machine learning'],
+  keywords: ['data engineering', 'data science', 'consulting', 'machine learning', 'sports analytics'],
   authors: [{ name: 'Ty Walters' }],
   creator: 'Ty Walters',
   publisher: 'Walters Data Solutions',
