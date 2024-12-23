@@ -30,31 +30,9 @@ export default function Page() {
         <ContactForm />
       </main>
       <footer className="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-between">
-            <div className="w-full md:w-1/3 mb-6 md:mb-0">
-              <h2 className="text-lg font-semibold mb-4">Walters Data Solutions</h2>
-            </div>
-            <div className="w-full md:w-1/3 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link></li>
-                <li><Link href="#about" className="hover:text-blue-600 dark:hover:text-blue-400">About</Link></li>
-                <li><Link href="#services" className="hover:text-blue-600 dark:hover:text-blue-400">Services</Link></li>
-                <li><Link href="#contact" className="hover:text-blue-600 dark:hover:text-blue-400">Contact</Link></li>
-              </ul>
-            </div>
-            <div className="w-full md:w-1/3">
-              <h3 className="text-lg font-semibold mb-4">Connect</h3>
-              <p>Email: ty@waltersdatasolutions.com</p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/ty-walters" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400">https://www.linkedin.com/in/ty-walters</a></p>
-              <p>GitHub: <a href="https://github.com/orgs/Walters-Data-Solutions" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400">https://github.com/orgs/Walters-Data-Solutions</a></p>
-            </div>
-          </div>
           <div className="mt-8 text-center">
             <p>© {new Date().getFullYear()} Walters Data Solutions. All rights reserved.</p>
           </div>
-        </div>
       </footer>
     </div>
   )
