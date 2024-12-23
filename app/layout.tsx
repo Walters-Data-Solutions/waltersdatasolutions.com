@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Walters Data Solutions | Data Solutions in Sports',
+    title: 'Walters Data Solutions | Sports Data Solutions',
     description: 'Data solutions tailored for sports organizations',
     images: ['https://waltersdatasolutions.com/favicon-32x32.png'],
   },
