@@ -2,12 +2,13 @@ import './globals.css'
 import { Inter, Poppins } from 'next/font/google'
 import { ThemeProvider } from './components/ThemeProvider'
 import { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const poppins = Poppins({ weight: ['400', '600', '700'], subsets: ['latin'], variable: '--font-poppins' })
 
 export const metadata: Metadata = {
-  title: 'Walters Data Solutions',
+  title: 'Walters Data Solutions | Expert Data Consulting in Sports',
   description: 'Expert data solutions tailored for sports organizations',
   keywords: ['Sports data consulting', 'Data engineering services', 'Data science sports', 'Cloud solutions',
       'Sports analytics experts', 'AI for sports'],
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Walters Data Solutions',
+    title: 'Walters Data Solutions | Expert Data Consulting in Sports',
     description: 'Expert data solutions tailored for sports organizations',
     url: 'https://waltersdatasolutions.com',
     siteName: 'Walters Data Solutions',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
         url: 'https://waltersdatasolutions.com/favicon-32x32.png',
         width: 1200,
         height: 630,
-        alt: 'Walters Data Solutions',
+        alt: 'Walters Data Solutions - Expert Data Consulting in Sports',
       },
     ],
     locale: 'en_US',
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Walters Data Solutions',
+    title: 'Walters Data Solutions | Expert Data Consulting in Sports',
     description: 'Expert data solutions tailored for sports organizations',
     creator: '@tywalters',
     images: ['https://waltersdatasolutions.com/favicon-32x32.png'],
@@ -86,6 +87,37 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
+                <Script id="schema-script" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "Walters Data Solutions",
+              "description": "Expert data solutions tailored for sports organizations",
+              "url": "https://waltersdatasolutions.com",
+              "logo": "https://waltersdatasolutions.com/favicon-16x16.png",
+              "sameAs": [
+                "https://www.linkedin.com/in/ty-walters",
+                "https://github.com/orgs/Walters-Data-Solutions"
+              ],
+              "founder": {
+                "@type": "Person",
+                "name": "Ty Walters",
+                "jobTitle": "Founder & Data Scientist"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "owner",
+                "email": "ty@waltersdatasolutions.com"
+              },
+              "services": [
+                "Data Engineering",
+                "Data Science",
+                "Cloud Data Solutions"
+              ]
+            }
+          `}
+        </Script>
       </body>
     </html>
   )

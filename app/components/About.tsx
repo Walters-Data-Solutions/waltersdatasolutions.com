@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Linkedin, Mail } from 'lucide-react'
+import { Linkedin, Mail, Github } from 'lucide-react'
 
 export default function About() {
   return (
@@ -44,6 +44,15 @@ export default function About() {
               >
                 <Mail className="w-6 h-6 mr-2" />
                 ty@waltersdatasolutions.com
+              </a>
+              <a
+                href="https://github.com/orgs/Walters-Data-Solutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+              >
+                <Github className="w-6 h-6 mr-2" />
+                GitHub Profile
               </a>
             </div>
           </div>
