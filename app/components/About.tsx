@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Linkedin } from 'lucide-react'
+import { Linkedin, Mail } from 'lucide-react'
 
 export default function About() {
   return (
@@ -21,22 +21,29 @@ export default function About() {
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
               Ty Walters is a Senior Data Scientist at University of Pittsburgh Athletics,
               with experience in both the business and performance aspects of the sports and entertainment industry.
-               He has led initiatives to boost ticket sales and improve customer insights
-               while also leveraging player performance data to optimize player acquisition.
             </p>
              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
              With technical expertise and industry knowledge, Ty helps organizations enhance their data capabilities
               and embrace innovation, enabling them to concentrate on what truly matters.
             </p>
-            <a
-              href="https://www.linkedin.com/in/ty-walters"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
-            >
-              <Linkedin className="w-6 h-6 mr-2" />
-              Connect on LinkedIn
-            </a>
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
+              <a
+                href="https://www.linkedin.com/in/tywalters"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+              >
+                <Linkedin className="w-6 h-6 mr-2" />
+                Connect on LinkedIn
+              </a>
+              <a
+                href="mailto:ty@waltersdatasolutions.com"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+              >
+                <Mail className="w-6 h-6 mr-2" />
+                ty@waltersdatasolutions.com
+              </a>
+            </div>
           </div>
         </div>
       </div>
