@@ -19,17 +19,15 @@ export default function About() {
           <div className="max-w-2xl w-full text-center lg:text-left">
             <h3 className="text-2xl font-semibold mb-4 text-blue-600 dark:text-blue-400 font-display">Ty Walters</h3>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              Ty Walters is serving as a Senior Data Scientist at University of Pittsburgh Athletics.
-               His background includes significant contributions to both the business and
-               performance sides of the sports and entertainment industry.
-                On the business side, Ty has driven initiatives focused on ticket sales and customer insights,
-                 while on the performance side, he has worked closely with player performance
-                data to optimize player acquisition.
+              Ty Walters is a Senior Data Scientist at University of Pittsburgh Athletics,
+              with experience in both the business and performance aspects of the sports and entertainment industry.
+               He has led initiatives to boost ticket sales and improve customer insights
+               while also leveraging player performance data to optimize player acquisition.
             </p>
-                        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6"> 
-                    With technical expertise and a deep understanding of the sports and entertainment industry, 
-                  Ty empowers organizations to enhance data capabilities and leverage innovation, enabling them to focus on what truly matters.
-                          </p>
+             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
+             With technical expertise and industry knowledge, Ty helps organizations enhance their data capabilities
+              and embrace innovation, enabling them to concentrate on what truly matters.
+            </p>
             <a
               href="https://www.linkedin.com/in/ty-walters"
               target="_blank"
