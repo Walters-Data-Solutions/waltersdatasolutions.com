@@ -3,7 +3,6 @@ import About from './components/About'
 import Services from './components/Services'
 import ContactForm from './components/ContactForm'
 import DarkModeToggle from './components/DarkModeToggle'
-import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -23,16 +22,15 @@ export default function Page() {
         </div>
       </header>
       <main className="pt-32 sm:pt-20">
-        <h1 className="sr-only">Walters Data Solutions - Expert Data Consulting in Sports</h1>
         <Home />
         <About />
         <Services />
         <ContactForm />
       </main>
-      <footer className="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-8">
-          <div className="mt-8 text-center">
-            <p>© {new Date().getFullYear()} Walters Data Solutions. All rights reserved.</p>
-          </div>
+      <footer className="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-center p-6">
+        <div className="container mx-auto">
+          <p>© {new Date().getFullYear()} Walters Data Solutions LLC. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   )
