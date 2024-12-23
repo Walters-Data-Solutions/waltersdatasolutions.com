@@ -34,8 +34,6 @@ export default function Page() {
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/3 mb-6 md:mb-0">
               <h2 className="text-lg font-semibold mb-4">Walters Data Solutions</h2>
-              <p>Using our experience in efficient cloud infrastructure,
-               data processing and automation to drive your business forward</p>
             </div>
             <div className="w-full md:w-1/3 mb-6 md:mb-0">
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
