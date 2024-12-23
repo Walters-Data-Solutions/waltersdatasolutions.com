@@ -3,8 +3,8 @@ import { Database, Brain, Cloud } from 'lucide-react'
 export default function Services() {
   const services = [
     { name: "Data Engineering", description: "Design and implement automated data pipelines that scale seamlessly with your business needs.", icon: Database },
-    { name: "Data Science", description: "Extract insights from data and build predictive models in addition to generative AI models to drive decisions.", icon: Brain },
-    { name: "Cloud Infrastructure", description: "Implement and manage cloud-based data platforms that unlock greater flexibility and potential.", icon: Cloud }
+    { name: "Data Science", description: "Extract insights from data, build predictive models, and develop generative AI solutions to inform decision-making.", icon: Brain },
+    { name: "Cloud Infrastructure", description: "Design, implement, and manage cloud-based data platforms to enable greater flexibility and potential.", icon: Cloud }
   ]
 
   return (
