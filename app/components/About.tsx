@@ -26,12 +26,10 @@ export default function About() {
                  while on the performance side, he has worked closely with player performance
                 data to optimize player acquisition.
             </p>
-                        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              With technical expertise, a deep understanding of cloud technologies and the unique challenges of sports and entertainment,
-              Ty empowers organizations to enhance their data capabilities and
-              leverage innovative technology to help organizations
-               redefine what’s possible, make their workflows more efficient, and enable them to focus on what truly matters.
-            </p>
+                        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6"> 
+                    With technical expertise and a deep understanding of the sports and entertainment industry, 
+                  Ty empowers organizations to enhance data capabilities and leverage innovation, enabling them to focus on what truly matters.
+                          </p>
             <a
               href="https://www.linkedin.com/in/ty-walters"
               target="_blank"
