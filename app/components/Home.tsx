@@ -6,7 +6,7 @@ export default function Home() {
           Building the Backbone of Your Data-Driven Future
         </h2>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          Using our experience in efficient cloud infrastructure, data processing and automation to drive your business forward
+          Using our expertise in cloud infrastructure, data processing, and automation to help you achieve your business goals
         </p>
         <a 
           href="#contact" 
