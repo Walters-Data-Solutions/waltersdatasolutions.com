@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const poppins = Poppins({ weight: ['400', '600', '700'], subsets: ['latin'], variable: '--font-poppins' })
 
 export const metadata: Metadata = {
-  title: 'Walters Data Solutions | Expert Data Consulting in Sports',
-  description: 'Expert data solutions tailored for sports organizations',
-  keywords: ['Sports data consulting', 'Data engineering services', 'Data science sports', 'Cloud solutions',
+  title: 'Walters Data Solutions | Data Solutions in Sports',
+  description: 'Data solutions tailored for sports organizations',
+  keywords: ['Sports data Solutions', 'Data engineering services', 'Data science sports', 'Cloud solutions',
       'Sports analytics experts', 'AI for sports'],
   authors: [{ name: 'Ty Walters' }],
   creator: 'Ty Walters',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Walters Data Solutions | Expert Data Consulting in Sports',
-    description: 'Expert data solutions tailored for sports organizations',
+    title: 'Walters Data Solutions | Data Solutions in Sports',
+    description: 'Data solutions tailored for sports organizations',
     url: 'https://waltersdatasolutions.com',
     siteName: 'Walters Data Solutions',
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: 'https://waltersdatasolutions.com/favicon-32x32.png',
         width: 1200,
         height: 630,
-        alt: 'Walters Data Solutions - Expert Data Consulting in Sports',
+        alt: 'Walters Data Solutions - Data Solutions in Sports',
       },
     ],
     locale: 'en_US',
@@ -42,9 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Walters Data Solutions | Expert Data Consulting in Sports',
-    description: 'Expert data solutions tailored for sports organizations',
-    creator: '@tywalters',
+    title: 'Walters Data Solutions | Data Solutions in Sports',
+    description: 'Data solutions tailored for sports organizations',
     images: ['https://waltersdatasolutions.com/favicon-32x32.png'],
   },
   robots: {
@@ -93,7 +92,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Walters Data Solutions",
-              "description": "Expert data solutions tailored for sports organizations",
+              "description": "Data solutions tailored for sports organizations",
               "url": "https://waltersdatasolutions.com",
               "logo": "https://waltersdatasolutions.com/favicon-16x16.png",
               "sameAs": [
