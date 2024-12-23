@@ -19,12 +19,14 @@ export default function About() {
           <div className="max-w-2xl w-full text-center lg:text-left">
             <h3 className="text-2xl font-semibold mb-4 text-blue-600 dark:text-blue-400 font-display">Ty Walters</h3>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              Ty Walters is a Senior Data Scientist at University of Pittsburgh Athletics,
-              with experience in both the business and performance aspects of the sports and entertainment industry.
+             Ty Walters is a Senior Data Scientist with experience working across multiple professional and
+             collegiate sports organizations. He has led data initiatives in ticket sales
+             while also leveraging player performance data to optimize player acquisition.
             </p>
              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-             With technical expertise and industry knowledge, Ty helps organizations enhance their data capabilities
-              and embrace innovation, enabling them to concentrate on what truly matters.
+             A Kansas City, Missouri native now living in Phoenix, Arizona,
+             Ty combines technical expertise with industry knowledge to help organizations enhance their
+             data capabilities and embrace innovation, enabling them to focus on what truly matters.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
               <a
