@@ -47,10 +47,10 @@ export default function Page() {
               </ul>
             </div>
             <div className="w-full md:w-1/3">
-              <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+              <h3 className="text-lg font-semibold mb-4">Connect</h3>
               <p>Email: ty@waltersdatasolutions.com</p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/ty-walters" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400"></a></p>
-              <p>GitHub: <a href="https://github.com/orgs/Walters-Data-Solutions" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400"></a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/ty-walters" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400">https://www.linkedin.com/in/ty-walters</a></p>
+              <p>GitHub: <a href="https://github.com/orgs/Walters-Data-Solutions" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400">https://github.com/orgs/Walters-Data-Solutions</a></p>
             </div>
           </div>
           <div className="mt-8 text-center">
