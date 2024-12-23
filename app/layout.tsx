@@ -8,8 +8,9 @@ const poppins = Poppins({ weight: ['400', '600', '700'], subsets: ['latin'], var
 
 export const metadata: Metadata = {
   title: 'Walters Data Solutions',
-  description: 'Expert data engineering and data science consulting to drive your business forward',
-  keywords: ['data engineering', 'data science', 'consulting', 'machine learning', 'sports analytics'],
+  description: 'Expert data solutions tailored for sports organizations',
+  keywords: ['Sports data consulting', 'Data engineering services', 'Data science sports', 'Cloud solutions',
+      'Sports analytics experts', 'AI for sports'],
   authors: [{ name: 'Ty Walters' }],
   creator: 'Ty Walters',
   publisher: 'Walters Data Solutions',
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Walters Data Solutions',
-    description: 'Expert data engineering and data science consulting to drive your business forward',
+    description: 'Expert data solutions tailored for sports organizations',
     url: 'https://waltersdatasolutions.com',
     siteName: 'Walters Data Solutions',
     images: [
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Walters Data Solutions',
-    description: 'Expert data engineering and data science consulting to drive your business forward',
+    description: 'Expert data solutions tailored for sports organizations',
     creator: '@tywalters',
     images: ['https://waltersdatasolutions.com/favicon-32x32.png'],
   },
