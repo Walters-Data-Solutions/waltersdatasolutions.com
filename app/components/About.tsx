@@ -30,7 +30,7 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
               <a
-                href="https://www.linkedin.com/in/tywalters"
+                href="https://www.linkedin.com/in/ty-walters"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
