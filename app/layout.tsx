@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     siteName: 'Walters Data Solutions',
     images: [
       {
-        url: 'https://waltersdatasolutions.com/favicon-32x32.png',
-        width: 1200,
-        height: 630,
+        url: 'https://waltersdatasolutions.com/small_logo.png',
+        width: 1563,
+        height: 1563,
         alt: 'Walters Data Solutions - Data Solutions in Sports',
       },
     ],
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Walters Data Solutions | Sports Data Solutions',
     description: 'Data solutions tailored for sports organizations',
-    images: ['https://waltersdatasolutions.com/favicon-32x32.png'],
+    images: ['https://waltersdatasolutions.com/small_logo.png'],
   },
   robots: {
     index: true,
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: '/small_logo_v2.png',
+    shortcut: '/small_logo_v2.png',
+    apple: '/small_logo_v2.png',
   },
   manifest: '/site.webmanifest',
 }
