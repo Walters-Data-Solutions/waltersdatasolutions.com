@@ -3,7 +3,7 @@
   "short_name": "WDS",
   "icons": [
     {
-      "src": "/small_logo_v2.png",
+      "src": "/small_logo.png",
       "sizes": "16x16",
       "type": "image/png"
     }
