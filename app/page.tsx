@@ -15,7 +15,7 @@ export default function Page() {
                 src="full_logo.png"
                 alt="Walters Data Solutions Logo"
                 width={1563}
-                height={526}
+                height={512}
                 className="w-[256px] h-[65px] object-contain"
               />
             <nav className="flex flex-col md:flex-row items-center">
