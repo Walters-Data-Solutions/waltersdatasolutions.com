@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://waltersdatasolutions.com/small_logo.png',
-        width: 6250,
-        height: 4179,
+        width: 1563,
+        height: 1140,
         alt: 'Walters Data Solutions - Data Solutions in Sports',
       },
     ],
