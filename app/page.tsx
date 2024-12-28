@@ -12,7 +12,7 @@ export default function Page() {
       <header className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 shadow-sm z-10">
         <div className="container mx-auto px-4 py-2">
           <div className="flex flex-col md:flex-row items-center justify-between">
-              <Link href="#" className="mb-4 md:mb-0">
+              <Link href="#home" className="mb-4 md:mb-0">
               <Image
                 src="full_logo.png"
                 alt="Walters Data Solutions Logo"
