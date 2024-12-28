@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import Home from './components/Home'
 import About from './components/About'
@@ -11,6 +12,7 @@ export default function Page() {
       <header className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 shadow-sm z-10">
         <div className="container mx-auto px-4 py-2">
           <div className="flex flex-col md:flex-row items-center justify-between">
+              <Link href="#" className="mb-4 md:mb-0">
               <Image
                 src="full_logo.png"
                 alt="Walters Data Solutions Logo"
@@ -18,6 +20,7 @@ export default function Page() {
                 height={512}
                 className="w-[256px] h-[65px] object-contain"
               />
+            </Link>
             <nav className="flex flex-col md:flex-row items-center">
               <ul className="flex flex-wrap justify-center space-x-4 md:space-x-6 mb-4 md:mb-0 md:mr-6">
                 <li><a href="#home" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Home</a></li>
