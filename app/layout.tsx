@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: 'Walters Data Solutions',
     images: [
       {
-        url: 'https://waltersdatasolutions.com/small_logo.png',
+        url: 'https://waltersdatasolutions.com/small_logo_icon.png',
         width: 1563,
         height: 1140,
         alt: 'Walters Data Solutions - Data Solutions in Sports',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Walters Data Solutions | Sports Data Solutions',
     description: 'Data solutions tailored for sports organizations',
-    images: ['https://waltersdatasolutions.com/small_logo.png'],
+    images: ['https://waltersdatasolutions.com/small_logo_icon.png'],
   },
   robots: {
     index: true,
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/small_logo.png',
-    shortcut: '/small_logo.png',
-    apple: '/small_logo.png',
+    icon: '/small_logo_icon.png',
+    shortcut: '/small_logo_icon.png',
+    apple: '/small_logo_icon.png',
   },
   manifest: '/site.webmanifest',
 }
@@ -94,7 +94,7 @@ export default function RootLayout({
               "name": "Walters Data Solutions",
               "description": "Data solutions tailored for sports organizations",
               "url": "https://waltersdatasolutions.com",
-              "logo": "https://waltersdatasolutions.com/small_logo.png",
+              "logo": "https://waltersdatasolutions.com/small_logo_icon.png",
               "sameAs": [
                 "https://www.linkedin.com/in/ty-walters",
                 "https://github.com/orgs/Walters-Data-Solutions"
