@@ -1,6 +1,6 @@
 {
-  "name": "Walters Data Solutions",
-  "short_name": "WDS",
+  "name": "MyWebSite",
+  "short_name": "MySite",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

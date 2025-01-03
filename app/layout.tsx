@@ -58,11 +58,19 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/small_logo_icon.png',
-    shortcut: '/small_logo_icon.png',
-    apple: '/small_logo_icon.png',
+      icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon.png', sizes: '96x96', type: 'image/png' },
+    ],
+    shortcut: '/icon.png',
+    apple: '/apple-icon.png',
   },
   manifest: '/site.webmanifest',
+    appleWebApp: {
+    title: 'WDS',
+    statusBarStyle: 'default',
+  },
 }
 
 export const viewport: Viewport = {
