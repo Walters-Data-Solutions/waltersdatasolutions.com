@@ -19,7 +19,7 @@ export default function About() {
           <div className="max-w-2xl w-full text-center lg:text-left">
             <h3 className="text-2xl font-semibold mb-4 text-blue-600 dark:text-blue-400 font-display">Ty Walters</h3>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-             Ty Walters is a Senior Data Scientist with experience working across multiple professional and
+             Ty Walters is a data expert with over 5 years of experience working across multiple professional and
              collegiate sports organizations. He has led data initiatives in ticket sales to optimize revenue
              while also leveraging player performance data to optimize player acquisition.
             </p>
